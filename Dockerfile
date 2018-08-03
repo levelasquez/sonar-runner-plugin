@@ -1,5 +1,4 @@
 FROM openjdk:8-jre-alpine
-MAINTAINER YPCloud <cloud@yp.ca>
 
 WORKDIR /opt/sonar
 RUN mkdir -p /opt/sonar/conf

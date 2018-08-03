@@ -23,8 +23,6 @@ type Plugin struct {
 	Sources    string
 	Inclusions string
 	Exclusions string
-	Language   string
-	Profile    string
 	Encoding   string
 	LcovPath   string
 	Debug      bool
