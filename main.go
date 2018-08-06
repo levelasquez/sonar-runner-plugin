@@ -96,7 +96,7 @@ func main() {
 			Name:   "lcovpath",
 			Usage:  "Project lcov report path",
 			EnvVar: "PLUGIN_LCOVPATH",
-			Value:  "test/coverage/reports/lcov.info",
+			Value:  "coverage/lcov.info",
 		},
 		cli.BoolFlag{
 			Name:   "debug",
