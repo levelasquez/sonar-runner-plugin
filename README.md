@@ -19,7 +19,7 @@ Build the docker image with the following commands:
 
 ```
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -tags netgo
-docker build --rm=true -t ypcloud/sonar-runner .
+docker build --rm=true -t levelasquez/drone-sonarqube-runner .
 ```
 
 Please note incorrectly building the image for the correct x64 linux and with
@@ -43,5 +43,5 @@ docker run --rm \
   -e SONAR_HOST=1.2.3.4:22 \
   -e SONAR_LOGIN=username \
   -e SONAR_PASSWORD=username \
-  ypcloud/sonar-runner
+  levelasquez/drone-sonarqube-runner
 ```

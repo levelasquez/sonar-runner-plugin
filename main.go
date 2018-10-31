@@ -107,7 +107,7 @@ func main() {
 			Name:   "allowed.branch.regex",
 			Usage:  "A regex to check against running branch to see if analysis is allowed",
 			EnvVar: "PLUGIN_ALLOWED_BRANCH_REGEX",
-			Value:  `(^master$|^develop$|^release\/+)`,
+			Value:  `(^master$|^develop$|^staging$|^fix$|^hotfix$|^feature$|^release\/+)`,
 		},
 	}
 

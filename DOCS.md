@@ -29,11 +29,11 @@ It is highly recommended to put the **SONAR_LOGIN** and
 not exposed to users. This can be done using the drone-cli.
 
 ```bash
-drone org secret add THEORG SONAR_LOGIN theuser --image ypcloud/sonar-runner
+drone org secret add THEORG SONAR_LOGIN theuser --image levelasquez/drone-sonarqube-runner
 ```
 
 ```bash
-drone org secret add THEORG SONAR_PASSWORD thepassword --image ypcloud/sonar-runner
+drone org secret add THEORG SONAR_PASSWORD thepassword --image levelasquez/drone-sonarqube-runner
 ```
 
 Then sign the YAML file after all secrets are added.
@@ -59,8 +59,8 @@ pipeline:
       - npm test
 
   sonar:
-    image: ypcloud/sonar-runner
+    image: levelasquez/drone-sonarqube-runner
     sources: "service/,utils/,daemon/,ui/"
-    version: "0.1.0"    
+    version: "0.1.0"
 ```
 
